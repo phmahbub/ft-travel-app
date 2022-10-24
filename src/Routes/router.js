@@ -12,7 +12,6 @@ export const router = createBrowserRouter([
         errorElement:<ErrorPage/>,
         children: [
             {path:'/home', element:<Home/>},
-            
             {path:'/products', element:<Products/>},
             {path:'/login', element:<Login/>},
         ]

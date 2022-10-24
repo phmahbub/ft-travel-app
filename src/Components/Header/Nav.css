@@ -1,0 +1,9 @@
+.newNav{
+    background: transparent;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+.newNav.active{
+    background: linear-gradient(90deg, rgb(239, 233, 238) 0%, rgb(217, 220, 226) 100%);
+}
