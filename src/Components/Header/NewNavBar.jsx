@@ -1,14 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import Button from "../Utilities/Button";
 
 const NewNavBar = () => {
-    let links=[
+    const links=[
         {name:'Home', link:'/home'},
         {name:'Products', link:'/products'},
         {name:'Places', link:'/places'},
         {name:'About', link:'/about'},
     ]
+    const [open, setOpen] = useState(false)
 
   return (
     <div className="shadow-md w-full fixed top-0 left-0">
@@ -19,7 +20,10 @@ const NewNavBar = () => {
           </span>
           PC Institute
         </div>
-        <ul className="md:flex items-center ">
+        <div onClick={()=>setOpen(!open)} className="text-4xl absolute right-8 top-6 cursor-pointer md:hidden text-orange-500">
+        <ion-icon name={open?'close':'menu'}></ion-icon>
+        </div>
+        <ul className={`md:flex items-center md:items-center md:pb-0 pb-12 absolute md:static bg-white md:z-auto z-[-1] left-0 w-full md:w-auto md:pl-0 pl-9 transition-all duration-500 ease-in  ${open? 'top-20':'top-[-490px]'} md:opacity-90 opacity-80`}>
             {
                 links.map((link)=>{
                     return(
