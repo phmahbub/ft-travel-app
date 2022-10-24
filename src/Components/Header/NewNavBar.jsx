@@ -22,7 +22,7 @@ const NewNavBar = () => {
             {
                 links.map((link)=>{
                     return(
-                       <li className="ml-8 text-xl font-semibold">
+                       <li key={} className="ml-8 text-xl font-semibold">
                            <Link to={link.link}>{link.name}</Link>
                        </li>
                     )
