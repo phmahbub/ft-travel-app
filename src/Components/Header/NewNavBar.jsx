@@ -34,7 +34,15 @@ const NewNavBar = () => {
                     
                 })
             }
-            <Button>Get Started</Button>
+           <div className="md:flex items-center justify-center">
+           <div><input 
+            type="text" 
+            name="search"
+            id="search" 
+            className="border-2 border-orange-400 px-5 py-2 md:ml-3 rounded md:mb-0 mb-3"
+            placeholder="Search Here"/></div>
+            <div><Button>Get Started</Button></div>
+           </div>
         </ul>
       </div>
     </div>
