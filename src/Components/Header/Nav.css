@@ -7,3 +7,13 @@
 .newNav.active{
     background: linear-gradient(90deg, rgb(239, 233, 238) 0%, rgb(217, 220, 226) 100%);
 }
+
+li a.active{
+    color: red;
+}
+.profile-image{
+    margin-left: 5px;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+}
